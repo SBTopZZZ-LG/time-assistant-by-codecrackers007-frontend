@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fields marked as * are required fields"
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="@color/accent2"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:background="@color/accent5"
+            android:gravity="center_horizontal" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* Select your profession: "
+        android:id="@+id/tv2"
+        android:layout_below="@+id/etAge"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/accent1"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:orientation="vertical"
+        android:id="@+id/rgProfession"
+        android:padding="10dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Freelancer"
+            android:textSize="18sp"
+            android:id="@+id/rbFreeLancer"
+            android:textColor="@color/accent2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student"
+            android:textSize="18sp"
+            android:id="@+id/rbStudent"
+            android:textColor="@color/accent2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee"
+            android:textSize="18sp"
+            android:id="@+id/rbEmployee"
+            android:textColor="@color/accent2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Self-Employed"
+            android:textSize="18sp"
+            android:id="@+id/rbSelfEmployed"
+            android:textColor="@color/accent2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other / Do not wish to mention"
+            android:textSize="18sp"
+            android:id="@+id/rbOther"
+            android:textColor="@color/accent2"/>
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rgProfession"
+        android:id="@+id/btnContinue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="   Continue   "
+        android:textColor="@color/white"
+        android:background="@color/accent2"/>
+
+</RelativeLayout>

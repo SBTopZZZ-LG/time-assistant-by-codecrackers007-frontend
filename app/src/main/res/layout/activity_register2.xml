@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register2Activity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/accent5"
+        android:id="@+id/cv1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Assistant"
+                android:id="@+id/appTitle"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete Registration"
+                android:id="@+id/appActivity"
+                android:layout_below="@+id/appTitle"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="@color/accent2"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/cv2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="We will need some more additional information in order to proceed"
+                android:id="@+id/tv2"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/accent2"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:id="@+id/btnContinue"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="   Continue   "
+                android:textColor="@color/white"
+                android:background="@color/accent2"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/accent5"
+        android:id="@+id/cv1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time Assistant"
+                android:id="@+id/appTitle"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/accent1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/appActivity"
+                android:layout_below="@+id/appTitle"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="@color/accent2"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        android:id="@+id/cv2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fill the required details to complete the registration"
+                android:id="@+id/tv2"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/accent1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fields marked as * are required fields"
+                android:id="@+id/tv3"
+                android:layout_below="@+id/tv2"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:textColor="@color/accent2"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="* Email Address"
+                android:layout_below="@+id/tv3"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:background="@color/accent5"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="An email verification will be sent to your email address"
+                android:id="@+id/tv4"
+                android:textStyle="italic"
+                android:layout_below="@+id/etEmailAddress"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/accent2"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:layout_below="@+id/tv4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:startIconDrawable="@drawable/ic_user">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textShortMessage"
+                    android:background="@color/accent5"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                android:layout_below="@+id/etFullName"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:startIconDrawable="@drawable/ic_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPhonetic"
+                    android:background="@color/accent5"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPhoneNumber"
+                android:id="@+id/btnRegister"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="   Register   "
+                android:textColor="@color/white"
+                android:background="@color/accent2"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
